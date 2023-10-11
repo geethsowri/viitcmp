@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Student-Grades</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(208, 208, 208);
+      padding-top: 90px;
+    }
+
+    .head {
+      background-color: #004B99;
+      width: 100%;
+      height: 100px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+
+    .vignan-logo {
+      width: 80px;
+      margin-top: 7px;
+      margin-left: 10px;
+    }
+
+    .title {
+      font-family: 'Lato', sans-serif;
+      display: inline;
+      position: absolute;
+      width: 550px;
+      margin-top: 7px;
+      margin-left: 10px;
+      color: white;
+      vertical-align: middle;
+    }
+
+    .about {
+      float: right;
+      margin-top: 30px;
+      margin-right: 60px;
+      font-size: 25px;
+      color: rgb(255, 251, 251);
+      text-decoration: none;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 400;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .about:hover {
+      color: #8FAADC;
+      transition: 0.2s ease;
+    }
+
+    .nav {
+      background-color: #8FAADC;
+      width: 100%;
+      height: 40px;
+      align-items: center;
+      align-content: center;
+      padding-top: 6px;
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul {
+      text-align: center;
+    }
+
+    nav li {
+      display: inline;
+      list-style: none;
+    }
+
+    nav li a {
+      text-decoration: none;
+      padding: 30px;
+      font-size: 22px;
+      font-family: 'Lato', sans-serif;
+      color: #004B99;
+    }
+
+    .main-buttton {
+      color: #000000;
+    }
+
+    a:hover {
+      color: #00254d;
+      transition: 0.2s ease;
+    }
+
+    a:active {
+      color: black
+    }
+
+    .main {
+      margin-top: 50px;
+      margin-bottom: 90px;
+
+    }
+
+    .mainform {
+      background-color: transparent;
+      width: 700px;
+      height: 350px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sem4 {
+      color: #000000;
+      padding-top: 5px;
+      width: 650px;
+      border-radius: 20px;
+      transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    }
+
+    .sem4:hover {
+      box-shadow: 0 0 10px #388eeb;
+      background-color: #4198f6;
+      color: white;
+    }
+
+    .sems {
+      vertical-align: middle;
+      align-items: center;
+    }
+
+    .mainhead {
+      margin-top: 90px;
+      text-align: left;
+      padding-top: 6px;
+    }
+
+    .mainheadform {
+      background-color: #00254d;
+      border-radius: 20px;
+      width: 700px;
+      height: 110px;
+      font-size: 20px;
+      font-family: 'Roboto Condensed', sans-serif;
+      color: white;
+    }
+
+    .details {
+      margin-left: 20px;
+    }
+
+    .queries {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 20px;
+      margin-bottom: 50px;
+      text-decoration: none;
+    }
+
+    .link {
+      text-decoration: none;
+      color: #00254d;
+    }
+
+    .link:hover {
+      color: #000000;
+      text-decoration: underline;
+    }
+
+    .foottext {
+      position: relative;
+      bottom: 0px;
+      font-size: 15px;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="headmain">
+    <header class="head">
+      <img src="Picture1.png" alt="vignan" class="vignan-logo">
+      <h1 class="title">
+        VIGNAN INSTITUTE OF INFORMATION TECHNOLOGY
+      </h1>
+      <a href="https://vignaniit.edu.in/" target="_blank" class="about">About VIIT</a>
+    </header>
+    <header class="nav">
+      <nav>
+        <ul>
+          <li><a href="/Student/Home/Student-Home.html">Home</a></li>
+          <li><a href="/Student/Attendance/Student-Attendance.html">Attendance</a></li>
+          <li><a href="/Student/Grades/Student-Grades.html" class="main-buttton">Grades</a></li>
+          <li><a href="/Student/About-Course/About-Course.html">About-Course</a></li>
+          <li><a href="/Student/Materials/Student-Materials.html">Materials</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <center>
+    <form class="mainheadform">
+      <div class="mainhead">
+        <p class="details"> Name: Gautam <br>
+          Registration number: 22L31A05XX <br>
+          Course and Branch: Btech, Computer Science and Engineering <br>
+          Section: 03 </p>
+      </div>
+    </form>
+  </center>
+  <div class="main">
+    <center>
+      <form class="mainform">
+        <div class="sems">
+          <center><a href="/Student/Grades/Student-Grades04.html" target="_self">
+              <img src="sem4.png" alt="Semester 04" class="sem4"></center>
+          <center><a href="/Student/Grades/Student-Grades03.html" target="_self">
+              <img src="sem3.png" alt="Semester 03" class="sem4"></center>
+          <center><a href="/Student/Grades/Student-Grades02.html" target="_self">
+              <img src="sem2.png" alt="Semester 02" class="sem4"></center>
+          <center><a href="/Student/Grades/Student-Grades01.html" target="_self">
+              <img src="sem1.png" alt="Semester 01" class="sem4"></center>
+          <center><a href="/Student/Grades/Grading-System.html" target="_self">
+              <img src="grades.png" alt="Semester 01" class="sem4"></center>
+        </div>
+      </form>
+    </center>
+  </div>
+  <center>
+    <h1 class="queries">
+      Inaccurate Grades/Marks? <a href="/Student/Queries/Queries.html" class="link">Inform us.</a>
+    </h1>
+  </center>
+
+  <center>
+    <p class="foottext">© Copyright 2023 by VIIT. All Rights Reserved.</p>
+  </center>
+</body>
+
+</html>

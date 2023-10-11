@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Student-Home</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(208, 208, 208);
+      padding-top: 90px;
+    }
+
+    .head {
+      background-color: #004B99;
+      width: 100%;
+      height: 100px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+
+    .vignan-logo {
+      width: 80px;
+      margin-top: 7px;
+      margin-left: 10px;
+    }
+
+    .title {
+      font-family: 'Lato', sans-serif;
+      display: inline;
+      position: absolute;
+      width: 550px;
+      margin-top: 7px;
+      margin-left: 10px;
+      color: white;
+    }
+
+    .about {
+      float: right;
+      margin-top: 30px;
+      margin-right: 60px;
+      font-size: 25px;
+      color: rgb(255, 251, 251);
+      text-decoration: none;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .about:hover {
+      color: #8FAADC;
+      transition: 0.2s ease;
+    }
+
+    .nav {
+      background-color: #8FAADC;
+      width: 100%;
+      height: 40px;
+      align-items: center;
+      align-content: center;
+      padding-top: 6px;
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul {
+      text-align: center;
+    }
+
+    nav li {
+      display: inline;
+      list-style: none;
+    }
+
+    nav li a {
+      text-decoration: none;
+      padding: 30px;
+      font-size: 22px;
+      font-family: 'Lato', sans-serif;
+      color: #004B99;
+    }
+
+    .main-buttton {
+      color: #000000;
+    }
+
+    a:hover {
+      color: #00254d;
+      transition: 0.2s ease;
+    }
+
+    a:active {
+      color: black
+    }
+
+    .main-heading {
+      font-family: 'Lato', sans-serif;
+      font-size: 40px;
+      margin-top: 90px;
+      margin-left: 50px;
+
+    }
+
+    .sub-heading {
+      font-family: 'Roboto Condensed', sans-serif;
+      margin-top: 40px;
+      margin-left: 50px;
+    }
+
+    .sub-matter {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 30px;
+      width: 900px;
+      margin-left: 50px;
+    }
+
+    .main {
+      align-content: center;
+      position: relative;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    .vcmp {
+      width: 500px;
+      float: right;
+      margin-top: 190px;
+      margin-right: 20px;
+      position: fixed;
+      margin-left: 1000px;
+
+    }
+
+    .foottext {
+      position: relative;
+      bottom: 0px;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="headmain">
+    <header class="head">
+      <img src="Picture1.png" alt="vignan" class="vignan-logo">
+      <h1 class="title">
+        VIGNAN INSTITUTE OF INFORMATION TECHNOLOGY
+      </h1>
+      <a href="https://vignaniit.edu.in/" target="_blank" class="about">About VIIT</a>
+    </header>
+    <header class="nav">
+      <nav>
+        <ul>
+          <li><a href="/Student/Home/Student-Home.html" class="main-buttton">Home</a></li>
+          <li><a href="/Student/Attendance/Student-Attendance.html">Attendance</a></li>
+          <li><a href="/Student/Grades/Student-Grades.html">Grades</a></li>
+          <li><a href="/Student/Grades/Student-Grades.html">About-Course</a></li>
+          <li><a href="/Student/Materials/Student-Materials.html">Materials</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <img src="Picture2.png" alt="vcmp" class="vcmp">
+  <div class="main">
+    <h1 class="main-heading">
+      Student Course Management Portal
+    </h1>
+    <h1 class="sub-heading">
+      Attendance Tracking
+    </h1>
+    <p class="sub-matter">
+      Never miss a beat with our intuitive attendance tracking feature. Log in to the student portal to view your
+      attendance records for each class, ensuring you stay on top of your commitments. With this tool, you can
+      effortlessly keep track of your attendance progress and make informed decisions regarding your academic
+      performance.
+    </p>
+    <h1 class="sub-heading">
+      Grade Monitoring
+    </h1>
+    <p class="sub-matter">
+      Stay informed about your academic progress through our comprehensive grade monitoring system. Access your grades
+      online, view detailed grade breakdowns, and gain valuable insights into your performance in individual courses.
+      Our user-friendly interface makes it simple to track your progress, empowering you to make the necessary
+      adjustments to achieve your academic goals.
+    </p>
+    <h1 class="sub-heading">
+      Study Materials
+    </h1>
+    <p class="sub-matter">
+      At VIIT, we believe in providing our students with the tools they need to excel. The student portal grants you
+      exclusive access to a wealth of study materials curated by our esteemed lecturers. From lecture notes to
+      presentations, study guides to additional resources, everything you need to enhance your understanding and
+      preparation is just a click away.
+    </p>
+    <h1 class="sub-heading">
+      Syllabus Check
+    </h1>
+    <p class="sub-matter">
+      Never be caught off guard by course requirements and expectations again. Our student portal provides easy access
+      to the semester syllabus for each of your enrolled courses. Familiarize yourself with the course objectives,
+      assessment criteria, and recommended reading materials, giving you a clear roadmap to success in your academic
+      pursuits.
+    </p>
+  </div>
+  <center>
+    <p class="foottext">© Copyright 2023 by VIIT. All Rights Reserved.</p>
+  </center>
+</body>
+
+</html>

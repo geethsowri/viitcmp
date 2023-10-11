@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HomePage</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        body {
+            background-color: #004894;
+        }
+
+        .form {
+            width: 100%;
+            background-color: white;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            height: 95vh;
+            margin-top: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+        }
+
+        img {
+            width: 70px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        .title {
+            font-family: 'Lato', sans-serif;
+            font-size: 40px;
+            padding-bottom: 10px;
+
+        }
+
+        .course {
+            font-size: 40px;
+            margin-top: 5px;
+            font-family: 'Roboto Condensed', sans-serif;
+            margin-right: 10px;
+            margin-bottom: 60px;
+        }
+
+        .foot {
+            color: black;
+        }
+
+        .about {
+            float: right;
+            margin-top: 35px;
+            margin-right: 60px;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .about:hover {
+            opacity: 0.5;
+            text-decoration: underline;
+        }
+
+        .foot {
+            color: black;
+            bottom: 0;
+        }
+
+        .logo1,
+        .logo2 {
+            align-content: end;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            width: 350px;
+            border-radius: 20px;
+            transition: box-shadow 0.4s, transform 0.4s;
+        }
+
+        .logo1:hover,
+        .logo2:hover {
+            border-color: #7A60A1;
+            box-shadow: 0 0 20px #7A60A1;
+
+        }
+
+        .foot {
+            background-color: transparent;
+            height: 25px;
+            width: 100%;
+            text-align: center;
+            color: black;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 7px;
+        }
+
+        .foottext {
+            position: relative;
+            bottom: 0px;
+            font-size: 13px;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form class="form">
+        <img src="/Home page/Picture1.png" class="logo" alt="VIGNAN">
+        <a href="https://vignaniit.edu.in/" target="_blank" class="about">About VIIT</a>
+        <center>
+            <h1 class="title" class="continue">
+                <e>VIGNAN INSTITUTE OF INFORMATION TECHNOLOGY</e>
+            </h1>
+        </center>
+        <center>
+            <h2 class="course">Course Management Portal</h2>
+        </center>
+        <div class="button">
+            <center><a href="/Student/Login/Student-LogIn.html" target="_self">
+                    <img src="logo1.png" alt="student" class="logo1">
+                </a></center>
+            <center><a href="/Faculty/Login/Faculty-Login.html" target="_self">
+                    <img src="logo2.png" alt="faculty" class="logo2">
+                </a></center>
+        </div>
+        <footer class="foot">
+            <p class="foottext">© Copyright 2023 by VIIT. All Rights Reserved.</p>
+        </footer>
+    </form>
+</body>
+
+</html>

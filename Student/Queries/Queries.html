@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Queries</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(208, 208, 208);
+            padding-top: 90px;
+        }
+
+        .head {
+            background-color: #004B99;
+            width: 100%;
+            height: 100px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+
+        .vignan-logo {
+            width: 80px;
+            margin-top: 7px;
+            margin-left: 10px;
+        }
+
+        .title {
+            font-family: 'Lato', sans-serif;
+            display: inline;
+            position: absolute;
+            width: 550px;
+            margin-top: 7px;
+            margin-left: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+
+        .about {
+            float: right;
+            margin-top: 30px;
+            margin-right: 60px;
+            font-size: 25px;
+            color: rgb(255, 251, 251);
+            text-decoration: none;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 400;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .about:hover {
+            color: #8FAADC;
+            transition: 0.2s ease;
+        }
+
+        .nav {
+            background-color: #8FAADC;
+            width: 100%;
+            height: 40px;
+            align-items: center;
+            align-content: center;
+            padding-top: 6px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            list-style: none;
+        }
+
+        nav li a {
+            text-decoration: none;
+            padding: 30px;
+            font-size: 22px;
+            font-family: 'Lato', sans-serif;
+            color: #004B99;
+        }
+
+        .main-buttton {
+            color: #000000;
+        }
+
+        a:hover {
+            color: #00254d;
+            transition: 0.2s ease;
+        }
+
+        a:active {
+            color: black
+        }
+
+        .queries {
+            margin-top: 200px;
+        }
+
+        .queries-form {
+            background-color: #00254d;
+            width: 38%;
+            height: 275px;
+            font-family: 'Roboto Condensed', sans-serif;
+            border-radius: 20px;
+            padding: 10px;
+            list-style-position: inherit;
+            text-align: left;
+        }
+
+        .text {
+            color: white;
+            margin-left: 25px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .foottext {
+            position: relative;
+            bottom: 0px;
+            font-size: 15px;
+            margin-bottom: 10px;
+            margin-top: 150px;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="headmain">
+        <header class="head">
+            <img src="Picture1.png" alt="vignan" class="vignan-logo">
+            <h1 class="title">
+                VIGNAN INSTITUTE OF INFORMATION TECHNOLOGY
+            </h1>
+            <a href="https://vignaniit.edu.in/" target="_blank" class="about">About VIIT</a>
+        </header>
+        <header class="nav">
+            <nav>
+                <ul>
+                    <li><a href="/Student/Home/Student-Home.html">Home</a></li>
+                    <li><a href="/Student/Attendance/Student-Attendance.html">Attendance</a></li>
+                    <li><a href="/Student/Grades/Student-Grades.html">Grades</a></li>
+                    <li><a href="/Student/About-Course/About-Course.html">About-Course</a></li>
+                    <li><a href="#">Materials</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <center>
+        <div class="queries">
+            <form class="queries-form">
+                <h3 class="text">
+                    For queries <br>
+                    <ul>
+                        <li>Attendance Data Inaccuracy</li>
+                        <li>Grades/Marks Data Integrity Issue</li>
+                        <li>Website Defects</li>
+                        <li>Forgot Password</li>
+                    </ul>
+                    Or any other, Please meet your class coordinator or Head of the Department (HOD). In the
+                    event that you are unable to meet them in person, kindly reach out to the designated phone numbers
+                    provided for further assistance. <br> +91 984860XXXX <br> +91 807496XXXX
+                </h3>
+
+            </form>
+        </div>
+    </center>
+    <center>
+        <p class="foottext">© Copyright 2023 by VIIT. All Rights Reserved.</p>
+    </center>
+</body>
+
+</html>

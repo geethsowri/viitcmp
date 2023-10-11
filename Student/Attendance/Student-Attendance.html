@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Student-Attendance</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(208, 208, 208);
+            padding-top: 90px;
+        }
+
+        .head {
+            background-color: #004B99;
+            width: 100%;
+            height: 100px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+
+        .vignan-logo {
+            width: 80px;
+            margin-top: 7px;
+            margin-left: 10px;
+        }
+
+        .title {
+            font-family: 'Lato', sans-serif;
+            display: inline;
+            position: absolute;
+            width: 550px;
+            margin-top: 7px;
+            margin-left: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+
+        .about {
+            float: right;
+            margin-top: 30px;
+            margin-right: 60px;
+            font-size: 25px;
+            color: rgb(255, 251, 251);
+            text-decoration: none;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 400;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .about:hover {
+            color: #8FAADC;
+            transition: 0.2s ease;
+        }
+
+        .nav {
+            background-color: #8FAADC;
+            width: 100%;
+            height: 40px;
+            align-items: center;
+            align-content: center;
+            padding-top: 6px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            list-style: none;
+        }
+
+        nav li a {
+            text-decoration: none;
+            padding: 30px;
+            font-size: 22px;
+            font-family: 'Lato', sans-serif;
+            color: #004B99;
+        }
+
+        .main-buttton {
+            color: #000000;
+        }
+
+        a:hover {
+            color: #00254d;
+            transition: 0.2s ease;
+        }
+
+        a:active {
+            color: black
+        }
+
+        .main {
+            text-align: center;
+        }
+
+        .main-head {
+            margin-top: 70px;
+            font-size: 30px;
+            font-family: 'Lato', sans-serif;
+
+        }
+
+        .heading {
+            font-size: 30px;
+            background-color: #00254d;
+            word-spacing: 90px;
+        }
+
+        table {
+            margin-top: 30px;
+            border-collapse: collapse;
+            width: 200px;
+            margin-bottom: 30px;
+        }
+
+        table td,
+        table th {
+            padding: 8px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        table th {
+            color: white;
+            background-color: #00254d;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        tbody td {
+            text-align: center;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .regno {
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+        }
+
+        .att {
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+
+        form {
+            background-color: #01346b;
+            width: 500px;
+            height: 100px;
+            margin-bottom: 10px;
+            border-radius: 12px;
+            font-family: 'Roboto Condensed', sans-serif;
+            color: white;
+            padding: 10px;
+            justify-content: center;
+        }
+
+        .foot {
+            padding-bottom: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .update {
+            margin-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .queries {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #00254d;
+        }
+
+        .link:hover {
+            color: #000000;
+            text-decoration: underline;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="headmain">
+        <header class="head">
+            <img src="Picture1.png" alt="vignan" class="vignan-logo">
+            <h1 class="title">
+                VIGNAN INSTITUTE OF INFORMATION TECHNOLOGY
+            </h1>
+            <a href="https://vignaniit.edu.in/" target="_blank" class="about">About VIIT</a>
+        </header>
+        <header class="nav">
+            <nav>
+                <ul>
+                    <li><a href="/Student/Home/Student-Home.html">Home</a></li>
+                    <li><a href="/Student/Attendance/Student-Attendance.html" class="main-buttton">Attendance</a></li>
+                    <li><a href="/Student/Grades/Student-Grades.html">Grades</a></li>
+                    <li><a href="/Student/About-Course/About-Course.html">About-Course</a></li>
+                    <li><a href="/Student/Materials/Student-Materials.html">Materials</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="main">
+        <h1 class="main-head">
+            BTECH, <span style="color: #01346b;">COMPUTER SCIENCE AND ENGINEERING(3)</span> <br> ATTENDANCE REPORT
+            FROM 15-05-2023 TO 20-05-2023
+        </h1>
+        <center>
+            <p class="update">Last updated 22 May 2023, 17:03</p>
+        </center>
+        <center>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="regno">REG NO</th>
+                        <th>CPP</th>
+                        <th>BC</th>
+                        <th>CO</th>
+                        <th>LAT</th>
+                        <th>WD</th>
+                        <th>CPPL</th>
+                        <th>BCL</th>
+                        <th>WDL</th>
+                        <th>APL</th>
+                        <th>OTHERS</th>
+                        <th>Total Hours</th>
+                        <th>Attended Hours</th>
+                        <th class="att">Attendance %</th>
+                    </tr>
+                </thead>
+                <tbody class="text">
+                    <td>05D2</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05D3</td>
+                    <td>4(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>3(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>0(2)</td>
+                    <td>41</td>
+                    <td>32</td>
+                    <td>89%</td>
+                </tbody>
+                <tbody>
+                    <td>05D4</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05D5</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05D6</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>4(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>41</td>
+                    <td>36</td>
+                    <td>98%</td>
+                </tbody>
+                <tbody>
+                    <td>05D7</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05D8</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05D9</td>
+                    <td>0(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>3(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>30</td>
+                    <td>82%</td>
+                </tbody>
+                <tbody>
+                <tbody>
+                    <td>05E0</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05E1</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>4(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>0(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>35</td>
+                    <td>92%</td>
+                </tbody>
+                <tbody>
+                    <td>05E2</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>3(6)</td>
+                    <td>1(2)</td>
+                    <td>0(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>34</td>
+                    <td>94%</td>
+                </tbody>
+                <tbody>
+                    <td>05E3</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05E4</td>
+                    <td>4(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>3(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>0(2)</td>
+                    <td>41</td>
+                    <td>32</td>
+                    <td>89%</td>
+                </tbody>
+                <tbody>
+                    <td>05E5</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05E6</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05E7</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>4(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>41</td>
+                    <td>36</td>
+                    <td>98%</td>
+                </tbody>
+                <tbody>
+                    <td>05E8</td>
+                    <td>0(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>3(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>30</td>
+                    <td>82%</td>
+                </tbody>
+                <tbody>
+                    <td>05E9</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>0(5)</td>
+                    <td>0(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>0(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>56%</td>
+                </tbody>
+                <td>05F0</td>
+                <td>7(7)</td>
+                <td>7(7)</td>
+                <td>6(6)</td>
+                <td>5(5)</td>
+                <td>6(6)</td>
+                <td>2(2)</td>
+                <td>2(2)</td>
+                <td>2(2)</td>
+                <td>2(2)</td>
+                <td>2(2)</td>
+                <td>41</td>
+                <td>41</td>
+                <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05F1</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>4(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>0(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>35</td>
+                    <td>92%</td>
+                </tbody>
+                <tbody>
+                    <td>05F2</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>3(6)</td>
+                    <td>1(2)</td>
+                    <td>0(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>34</td>
+                    <td>94%</td>
+                </tbody>
+                <tbody>
+                    <td>05F3</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05F4</td>
+                    <td>4(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>3(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>0(2)</td>
+                    <td>41</td>
+                    <td>32</td>
+                    <td>89%</td>
+                </tbody>
+                <tbody>
+                    <td>05F5</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05F6</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05F7</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>4(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>41</td>
+                    <td>36</td>
+                    <td>98%</td>
+                </tbody>
+                <tbody>
+                    <td>05F8</td>
+                    <td>0(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>3(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>30</td>
+                    <td>82%</td>
+                </tbody>
+                <tbody>
+                    <td>05F9</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>0(5)</td>
+                    <td>0(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>0(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>56%</td>
+                <tbody>
+                    <td>05G0</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05G1</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>4(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>0(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>35</td>
+                    <td>92%</td>
+                </tbody>
+                <tbody>
+                    <td>05G2</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>3(6)</td>
+                    <td>1(2)</td>
+                    <td>0(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>34</td>
+                    <td>94%</td>
+                </tbody>
+                <tbody>
+                    <td>05G3</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05G4</td>
+                    <td>4(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>3(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>0(2)</td>
+                    <td>41</td>
+                    <td>32</td>
+                    <td>89%</td>
+                </tbody>
+                <tbody>
+                    <td>05G5</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05G6</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05G7</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>4(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>41</td>
+                    <td>36</td>
+                    <td>98%</td>
+                </tbody>
+                <tbody>
+                    <td>05G8</td>
+                    <td>0(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>3(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>30</td>
+                    <td>82%</td>
+                </tbody>
+                <tbody>
+                    <td>05G9</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>0(5)</td>
+                    <td>0(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>0(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>56%</td>
+                </tbody>
+                <td>05H0</td>
+                <td>7(7)</td>
+                <td>7(7)</td>
+                <td>6(6)</td>
+                <td>5(5)</td>
+                <td>6(6)</td>
+                <td>2(2)</td>
+                <td>2(2)</td>
+                <td>2(2)</td>
+                <td>2(2)</td>
+                <td>2(2)</td>
+                <td>41</td>
+                <td>41</td>
+                <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05H1</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>4(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>0(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>35</td>
+                    <td>92%</td>
+                </tbody>
+                <tbody>
+                    <td>05H2</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>3(6)</td>
+                    <td>1(2)</td>
+                    <td>0(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>34</td>
+                    <td>94%</td>
+                </tbody>
+                <tbody>
+                    <td>05H3</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05H4</td>
+                    <td>4(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>3(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>0(2)</td>
+                    <td>41</td>
+                    <td>32</td>
+                    <td>89%</td>
+                </tbody>
+                <tbody>
+                    <td>05H5</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05H6</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05H7</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>4(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>41</td>
+                    <td>36</td>
+                    <td>98%</td>
+                </tbody>
+                <tbody>
+                    <td>05H8</td>
+                    <td>0(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>3(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>30</td>
+                    <td>82%</td>
+                </tbody>
+                <tbody>
+                    <td>05H9</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>0(5)</td>
+                    <td>0(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>0(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>56%</td>
+                <tbody>
+                    <td>05I0</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05I1</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>4(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>0(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>35</td>
+                    <td>92%</td>
+                </tbody>
+                <tbody>
+                    <td>05I2</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>3(6)</td>
+                    <td>1(2)</td>
+                    <td>0(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>34</td>
+                    <td>94%</td>
+                </tbody>
+                <tbody>
+                    <td>05I3</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05I4</td>
+                    <td>4(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>3(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>0(2)</td>
+                    <td>41</td>
+                    <td>32</td>
+                    <td>89%</td>
+                </tbody>
+                <tbody>
+                    <td>05I5</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05I6</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05I7</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>4(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>41</td>
+                    <td>36</td>
+                    <td>98%</td>
+                </tbody>
+                <tbody>
+                    <td>05I8</td>
+                    <td>0(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>3(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>30</td>
+                    <td>82%</td>
+                </tbody>
+                <tbody>
+                    <td>05I9</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>0(5)</td>
+                    <td>0(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>0(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>56%</td>
+                </tbody>
+                <td>05J0</td>
+                <td>7(7)</td>
+                <td>7(7)</td>
+                <td>6(6)</td>
+                <td>5(5)</td>
+                <td>6(6)</td>
+                <td>2(2)</td>
+                <td>2(2)</td>
+                <td>2(2)</td>
+                <td>2(2)</td>
+                <td>2(2)</td>
+                <td>41</td>
+                <td>41</td>
+                <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05J1</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>4(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>0(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>35</td>
+                    <td>92%</td>
+                </tbody>
+                <tbody>
+                    <td>05J2</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>3(6)</td>
+                    <td>1(2)</td>
+                    <td>0(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>34</td>
+                    <td>94%</td>
+                </tbody>
+                <tbody>
+                    <td>05J3</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+                <tbody>
+                    <td>05J4</td>
+                    <td>4(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>3(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>1(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>0(2)</td>
+                    <td>41</td>
+                    <td>32</td>
+                    <td>89%</td>
+                </tbody>
+                <tbody>
+                    <td>05J5</td>
+                    <td>7(7)</td>
+                    <td>7(7)</td>
+                    <td>6(6)</td>
+                    <td>5(5)</td>
+                    <td>6(6)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>2(2)</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>100%</td>
+                </tbody>
+            </table>
+        </center>
+        <div class="form">
+            <center>
+                <form>
+                    <p class="attendance-rules">
+                        Above attendance format :
+                        Attended-classes(Total-classes) <br> Attendance for every class is mandatory. For MID and END
+                        Exams, Only the students with attendance 75% and above are considered. Students with attendance
+                        below 75% will be detained.
+                    </p>
+                </form>
+            </center>
+        </div>
+    </div>
+    <center>
+        <h1 class="queries">
+            Wrong Attendance? <a href="/Student/Queries/Queries.html" class="link">Inform us.</a>
+        </h1>
+    </center>
+    <footer class="foot">
+        <p style="vertical-align: middle;">© Copyright 2023 by VIIT. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

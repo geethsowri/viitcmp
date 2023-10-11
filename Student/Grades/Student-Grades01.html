@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Student-Grades01</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scrollbar-width: none;
+    }
+
+    body {
+      background-color: rgb(208, 208, 208);
+      padding-top: 90px;
+    }
+
+    .head {
+      background-color: #004B99;
+      width: 100%;
+      height: 100px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+
+    .vignan-logo {
+      width: 80px;
+      margin-top: 7px;
+      margin-left: 10px;
+    }
+
+    .title {
+      font-family: 'Lato', sans-serif;
+      display: inline;
+      position: absolute;
+      width: 550px;
+      margin-top: 7px;
+      margin-left: 10px;
+      color: white;
+      vertical-align: middle;
+    }
+
+    .about {
+      float: right;
+      margin-top: 30px;
+      margin-right: 60px;
+      font-size: 25px;
+      color: rgb(255, 251, 251);
+      text-decoration: none;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 400;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .about:hover {
+      color: #8FAADC;
+      transition: 0.2s ease;
+    }
+
+    .nav {
+      background-color: #8FAADC;
+      width: 100%;
+      height: 40px;
+      align-items: center;
+      align-content: center;
+      padding-top: 6px;
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul {
+      text-align: center;
+    }
+
+    nav li {
+      display: inline;
+      list-style: none;
+    }
+
+    nav li a {
+      text-decoration: none;
+      padding: 30px;
+      font-size: 22px;
+      font-family: 'Lato', sans-serif;
+      color: #004B99;
+    }
+
+    .main-buttton {
+      color: #000000;
+    }
+
+    a:hover {
+      color: #00254d;
+      transition: 0.2s ease;
+    }
+
+    a:active {
+      color: black
+    }
+
+    .mid01 {
+      margin-top: 70px;
+      margin-left: 30px;
+      font-family: 'Lato', sans-serif;
+      font-size: 13px;
+    }
+
+    table {
+      margin-top: 30px;
+      border-collapse: collapse;
+      width: 50%;
+      margin-bottom: 30px;
+    }
+
+    table td,
+    table th {
+      padding: 8px;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 17px;
+    }
+
+    table th {
+      color: white;
+      background-color: #00254d;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    tbody td {
+      text-align: center;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .regno {
+      border-top-left-radius: 12px;
+    }
+
+    .att {
+      border-top-right-radius: 12px;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .updated {
+      font-family: 'Roboto Condensed', sans-serif;
+      margin-top: 10px;
+    }
+
+    .regno1 {
+      border-bottom-left-radius: 12px;
+    }
+
+    .att1 {
+      border-bottom-right-radius: 12px;
+    }
+
+    .thin-line {
+      border-top: 1px solid #000;
+    }
+
+    .sem {
+      margin-top: 50px;
+      margin-left: 30px;
+      font-family: 'Lato', sans-serif;
+      font-size: 13px;
+    }
+
+    .result {
+      font-family: 'Lato', sans-serif;
+      margin-bottom: 50px;
+    }
+
+    .pass {
+      color: green;
+    }
+
+    .foottext {
+      position: relative;
+      bottom: 0px;
+      font-size: 15px;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="headmain">
+    <header class="head">
+      <img src="Picture1.png" alt="vignan" class="vignan-logo">
+      <h1 class="title">
+        VIGNAN INSTITUTE OF INFORMATION TECHNOLOGY
+      </h1>
+      <a href="https://vignaniit.edu.in/" target="_blank" class="about">About VIIT</a>
+    </header>
+    <header class="nav">
+      <nav>
+        <ul>
+          <li><a href="/Student/Home/Student-Home.html">Home</a></li>
+          <li><a href="/Student/Attendance/Student-Attendance.html">Attendance</a></li>
+          <li><a href="/Student/Grades/Student-Grades.html" class="main-buttton">Grades</a></li>
+          <li><a href="/Student/About-Course/About-Course.html">About-Course</a></li>
+          <li><a href="/Student/Materials/Student-Materials.html">Materials</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <center>
+    <div class="mid01">
+      <h1 class="title01">
+        MID EXAMINATION 01 (15-12-2022 to 20-12-2022)
+      </h1>
+      <p class="updated">
+        Updated: 28 DEC 2022, 00:23
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th class="regno">SUBJECT</th>
+            <th>OUT OF 30</th>
+            <th>OUT OF 18</th>
+            <th class="att">PERFOMANCE</th>
+          </tr>
+        </thead>
+        <tbody class="text">
+          <td>CALCULUS</td>
+          <td>30</td>
+          <td>18</td>
+          <td>EXCELLENT</td>
+        </tbody>
+        <tbody>
+          <td>PSPC</td>
+          <td>28</td>
+          <td>17</td>
+          <td>EXCELLENT</td>
+        </tbody>
+        <tbody>
+          <td>ED</td>
+          <td>25</td>
+          <td>16</td>
+          <td>GOOD</td>
+        </tbody>
+        <tbody>
+          <td>AP</td>
+          <td>23</td>
+          <td>11</td>
+          <td>NEEDS IMPROVEMENT</td>
+        </tbody>
+        <tbody class="red">
+          <td>TEC</td>
+          <td>20</td>
+          <td>10</td>
+          <td>FAIL</td>
+        </tbody>
+        <tr>
+          <th class="regno1">AVERAGE</th>
+          <th>25</th>
+          <th>14</th>
+          <th class="att1">NEED IMPROVEMENT</th>
+        </tr>
+      </table>
+    </div>
+  </center>
+  <center>
+    <div class="mid01">
+      <h1 class="title01">
+        MID EXAMINATION 02 (20-02-2023 to 25-02-2023)
+      </h1>
+      <p class="updated">
+        Updated: 01 JAN 2023, 7:47
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th class="regno">SUBJECT</th>
+            <th>OUT OF 30</th>
+            <th>OUT OF 18</th>
+            <th class="att">PERFOMANCE</th>
+          </tr>
+        </thead>
+        <tbody class="text">
+          <td>CALCULUS</td>
+          <td>30</td>
+          <td>18</td>
+          <td>EXCELLENT</td>
+        </tbody>
+        <tbody>
+          <td>PSPC</td>
+          <td>28</td>
+          <td>17</td>
+          <td>EXCELLENT</td>
+        </tbody>
+        <tbody>
+          <td>ED</td>
+          <td>30</td>
+          <td>18</td>
+          <td>EXCELLENT</td>
+        </tbody>
+        <tbody>
+          <td>AP</td>
+          <td>25</td>
+          <td>13</td>
+          <td>NEEDS IMPROVEMENT</td>
+        </tbody>
+        <tbody>
+          <td>TEC</td>
+          <td>30</td>
+          <td>18</td>
+          <td>EXCELLENT</td>
+        </tbody>
+        <tr>
+          <th class="regno1">AVERAGE</th>
+          <th>29</th>
+          <th>17</th>
+          <th class="att1">EXCELLENT</th>
+        </tr>
+      </table>
+    </div>
+  </center>
+  <div class="thin-line"></div>
+  <center>
+    <div class="sem">
+      <h1 class="title01">
+        SEMESTER REGULAR EXAMINATION VR-22 (02-03-2023 to 15-03-2023)
+      </h1>
+      <p class="updated">
+        Updated: 13 MAY 2023, 13:25
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th class="regno">SUBJECT</th>
+            <th>GRADE</th>
+          </tr>
+        </thead>
+        <tbody class="text">
+          <td>CALCULUS</td>
+          <td>O</td>
+        </tbody>
+        <tbody>
+          <td>PSPC</td>
+          <td>A</td>
+        </tbody>
+        <tbody>
+          <td>ED</td>
+          <td>O</td>
+        </tbody>
+        <tbody>
+          <td>AP</td>
+          <td>A</td>
+        </tbody>
+        <tbody>
+          <td>TEC</td>
+          <td>A</td>
+        </tbody>
+        <tbody>
+          <td>TEC-LAB</td>
+          <td>A</td>
+        </tbody>
+        <tbody>
+          <td>PSPC-LAB</td>
+          <td>O</td>
+        <tbody>
+          <td>EE-LAB</td>
+          <td>B</td>
+        </tbody>
+        <tbody>
+          <td>GSY</td>
+          <td>B</td>
+        </tbody>
+        </tbody>
+        <tr>
+          <th class="regno1">SGPA</th>
+          <th class="att1">9.23</th>
+        </tr>
+      </table>
+      <h2 class="result">
+        RESULT: &nbsp; <span class="pass"> PASSED </span>
+      </h2>
+    </div>
+  </center>
+  <center>
+    <p class="foottext">© Copyright 2023 by VIIT. All Rights Reserved.</p>
+  </center>
+</body>
+
+</html>
